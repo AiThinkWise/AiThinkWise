@@ -997,5 +997,13 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script src="clean-urls.js"></script>
+    
+    <!-- Immediate URL Cleaner -->
+    <script>
+        // Immediate URL cleaning for index.html
+        if (window.location.pathname.includes('index.html')) {
+            window.location.replace('/');
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // GitHub Pages 404 redirect handler for clean URLs
+        (function() {
+            'use strict';
+            
+            // Clean URL mapping
+            const cleanUrls = {
+                'services': 'services.html',
+                'why-choose-us': 'why-choose-us.html',
+                'contact': 'contact.html',
+                'get-started': 'get-started.html',
+                'thank-you': 'thank-you.html',
+                'digital-services': 'digital-services.html',
+                'qr-scan': 'qr-scan.html',
+                'ads-template': 'ads-template.html'
+            };
+            
+            // Get current path
+            const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+            
+            // Handle root redirect
+            if (path === '' || path === 'index.html') {
+                window.location.replace('/');
+                return;
+            }
+            
+            // Handle clean URL redirects
+            if (cleanUrls[path]) {
+                window.location.replace('/' + cleanUrls[path]);
+                return;
+            }
+            
+            // If no match found, redirect to home
+            window.location.replace('/');
+        })();
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h2>Redirecting...</h2>
+        <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+    </div>
+</body>
+</html>

@@ -20,28 +20,17 @@
     
     // Get current path without leading slash
     function getCurrentPath() {
-        return window.location.pathname.replace(/^\//, '');
+        return window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
     }
     
     // Check if current URL needs to be cleaned
     function handleCleanUrl() {
         const currentPath = getCurrentPath();
         
-        // Handle index.html specifically
-        if (currentPath === 'index.html' || currentPath === '') {
-            // Update URL to clean root
-            const newUrl = window.location.origin + '/';
-            window.history.replaceState({}, '', newUrl);
+        // Handle index.html specifically - redirect to root
+        if (currentPath === 'index.html') {
+            window.location.replace('/');
             return;
-        }
-        
-        // If we're on a clean URL (no .html), redirect to the actual file
-        if (currentPath && cleanUrls[currentPath] && !currentPath.includes('.')) {
-            // Only redirect if we're not already on the .html version
-            if (!window.location.href.includes('.html')) {
-                window.location.replace('/' + cleanUrls[currentPath]);
-                return;
-            }
         }
         
         // If we're on a .html URL, update the browser URL to clean version
