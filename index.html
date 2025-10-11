@@ -80,36 +80,128 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "AiThinkWise",
-        "url": "https://aithinkwise.pro",
-        "logo": "https://aithinkwise.pro/Files/AiThinkWise.png",
-        "description": "Professional web development and business automation solutions. Transform your business with modern digital solutions.",
+        "alternateName": "AiThinkWise Technology Solutions",
+        "url": "https://aithinkwise.com",
+        "logo": "https://aithinkwise.com/Files/AiThinkWise.PNG",
+        "description": "Professional web development and business automation solutions provider in the Philippines. We create smarter websites, intelligent systems, and better customer experiences.",
+        "foundingDate": "2024",
         "address": {
             "@type": "PostalAddress",
-            "addressCountry": "PH"
+            "addressCountry": "PH",
+            "addressRegion": "Philippines"
         },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "vanjerson2@gmail.com",
-            "contactType": "customer service"
-        },
-        "sameAs": [
-            "https://aithinkwise.pro"
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "email": "vanjerson2@gmail.com",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Filipino"]
+            },
+            {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "email": "vanjerson2@gmail.com",
+                "availableLanguage": ["English", "Filipino"]
+            }
         ],
-        "service": [
+        "sameAs": [
+            "https://aithinkwise.com",
+            "https://facebook.com/profile.php?id=61581463806154",
+            "https://calendly.com/aithinkwise/aithinkwise-technology-consultation"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Website Development",
+                        "description": "Professional website design and development services for businesses in the Philippines"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Business Automation",
+                        "description": "Custom automation solutions to streamline business processes and increase efficiency"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Digital Transformation",
+                        "description": "Complete digital transformation consulting and implementation services"
+                    }
+                }
+            ]
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Philippines"
+        },
+        "knowsAbout": [
+            "Web Development",
+            "Business Automation", 
+            "Digital Transformation",
+            "Website Design",
+            "Custom Web Applications",
+            "Process Automation",
+            "Customer Experience Optimization",
+            "Philippines Web Development",
+            "Business Process Automation"
+        ]
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
             {
-                "@type": "Service",
-                "name": "Web Development",
-                "description": "Professional website development and custom web applications"
+                "@type": "Question",
+                "name": "What services does AiThinkWise offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AiThinkWise offers professional web development, business automation, and digital transformation services. We specialize in creating smarter websites, intelligent systems, and better customer experiences for businesses in the Philippines."
+                }
             },
             {
-                "@type": "Service", 
-                "name": "Business Automation",
-                "description": "Automate business processes and streamline workflows"
+                "@type": "Question", 
+                "name": "How much does website development cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Website development costs vary based on complexity and requirements. We offer free consultations to provide accurate pricing for your specific project needs. Contact us for a personalized quote."
+                }
             },
             {
-                "@type": "Service",
-                "name": "Digital Transformation",
-                "description": "Transform traditional businesses into digital-first operations"
+                "@type": "Question",
+                "name": "Do you provide business automation services?",
+                "acceptedAnswer": {
+                    "@type": "Answer", 
+                    "text": "Yes, we specialize in business automation solutions including process automation, workflow optimization, and custom automation systems to help businesses operate more efficiently."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to develop a website?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Website development timeline depends on project complexity. Simple websites typically take 2-4 weeks, while complex applications may take 2-3 months. We provide detailed timelines during our free consultation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer ongoing support and maintenance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide comprehensive ongoing support and maintenance services including updates, security monitoring, performance optimization, and technical support for all our projects."
+                }
             }
         ]
     }
