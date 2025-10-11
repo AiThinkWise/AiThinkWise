@@ -1,0 +1,60 @@
+# AiThinkWise GitHub Pages Configuration
+# This file enables clean URLs without .html extension
+
+# Site settings
+title: "AiThinkWise - Professional Web Development & Business Automation Solutions"
+description: "Professional web development and business automation solutions provider in the Philippines. We create smarter websites, intelligent systems, and better customer experiences."
+url: "https://aithinkwise.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Clean URLs - Remove .html extension
+permalink: /:title/
+permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: /:name/
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .htaccess
+  - ADVANCED_SEO_STRATEGY.md
+  - TECHNICAL_DOCS.md
+  - QUICK_REFERENCE.md
+  - SECURITY.md
+  - google-apps-script.js
+  - ads-template.html
+
+# Include files
+include:
+  - _redirects
+
+# Plugins
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+
+# SEO settings
+sitemap:
+  changefreq: weekly
+  priority: 0.8

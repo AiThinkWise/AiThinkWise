@@ -1,0 +1,28 @@
+# AiThinkWise Clean URL Redirects
+# This file handles clean URLs without .html extension
+
+# Redirect .html URLs to clean URLs
+/services.html /services 301
+/why-choose-us.html /why-choose-us 301
+/contact.html /contact 301
+/get-started.html /get-started 301
+/thank-you.html /thank-you 301
+/digital-services.html /digital-services 301
+/qr-scan.html /qr-scan 301
+/ads-template.html /ads-template 301
+
+# Handle trailing slashes
+/services/ /services 301
+/why-choose-us/ /why-choose-us 301
+/contact/ /contact 301
+/get-started/ /get-started 301
+/thank-you/ /thank-you 301
+/digital-services/ /digital-services 301
+/qr-scan/ /qr-scan 301
+/ads-template/ /ads-template 301
+
+# Root redirects
+/index.html / 301
+
+# Catch-all for clean URLs
+/* /:splat.html 200
