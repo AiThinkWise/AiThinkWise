@@ -118,6 +118,9 @@ RedirectMatch 404 /\.svn
 # Custom redirects for SEO (add your specific redirects here)
 # Redirect 301 /old-page.html /new-page.html
 
+# Redirect index.html to root
+RewriteRule ^index\.html$ / [R=301,L]
+
 # Canonical URL enforcement
 RewriteCond %{QUERY_STRING} ^$
 RewriteRule ^(.*)$ /$1? [R=301,L]

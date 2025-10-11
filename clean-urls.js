@@ -27,6 +27,14 @@
     function handleCleanUrl() {
         const currentPath = getCurrentPath();
         
+        // Handle index.html specifically
+        if (currentPath === 'index.html' || currentPath === '') {
+            // Update URL to clean root
+            const newUrl = window.location.origin + '/';
+            window.history.replaceState({}, '', newUrl);
+            return;
+        }
+        
         // If we're on a clean URL (no .html), redirect to the actual file
         if (currentPath && cleanUrls[currentPath] && !currentPath.includes('.')) {
             // Only redirect if we're not already on the .html version
@@ -53,7 +61,12 @@
         
         links.forEach(function(link) {
             const href = link.getAttribute('href');
-            const cleanHref = href.replace('.html', '');
+            let cleanHref = href.replace('.html', '');
+            
+            // Handle index.html specifically
+            if (href === 'index.html') {
+                cleanHref = '/';
+            }
             
             // Update href to clean URL
             link.setAttribute('href', cleanHref);
