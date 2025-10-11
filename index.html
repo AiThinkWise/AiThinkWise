@@ -74,6 +74,30 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'AiThinkWise - Professional Web Development & Business Automation Solutions',
+            page_location: window.location.href,
+            custom_map: {
+                'custom_parameter_1': 'business_type',
+                'custom_parameter_2': 'service_category'
+            }
+        });
+        
+        // Track page views
+        gtag('event', 'page_view', {
+            page_title: 'AiThinkWise Home',
+            page_location: window.location.href,
+            business_type: 'web_development',
+            service_category: 'digital_services'
+        });
+    </script>
+    
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
