@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - AiThinkWise</title>
+    <meta name="description" content="Ready to transform your business? Get started with AiThinkWise today. Free consultation and custom solutions for your web development and automation needs.">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://connect.facebook.net https://fonts.googleapis.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://connect.facebook.net https://calendly.com https://script.google.com; frame-src https://calendly.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Files/AiThinkWise.png">
+    <link rel="shortcut icon" type="image/x-icon" href="Files/AiThinkWise.png">
+    <link rel="apple-touch-icon" href="Files/AiThinkWise.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1499856484590217');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1499856484590217&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- Follow Us Section -->
+    <div class="encore-follow-us">
+        <div class="encore-follow-us-content">
+            <a href="https://facebook.com/profile.php?id=61581463806154" target="_blank" rel="noopener noreferrer" class="encore-follow-us-link">
+                <span class="encore-follow-us-label">Fa.</span>
+            </a>
+            <div class="encore-follow-us-line"></div>
+            <span class="encore-follow-us-text">Follow Us</span>
+        </div>
+    </div>
+
+    <!-- Fixed Logo in Top Left Corner -->
+    <div class="encore-fixed-logo">
+        <a href="/" class="encore-logo-fixed">
+            <img src="Files/AiThinkWise.png" alt="AiThinkWise Logo" class="encore-logo-img-fixed">
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="encore-header">
+        <nav class="encore-nav">
+            <div class="encore-nav-container">
+                <div class="encore-nav-spacer"></div>
+                
+                <div class="encore-mobile-logo">
+                    <a href="/" class="encore-logo-mobile">
+                        <img src="Files/AiThinkWise.png" alt="AiThinkWise Logo" class="encore-mobile-logo-img">
+                    </a>
+                </div>
+                
+                <div class="encore-nav-menu" id="encoreNavMenu">
+                    <a href="/" class="encore-nav-link">Home</a>
+                    <a href="/services" class="encore-nav-link">Services</a>
+                    <a href="/why-choose-us" class="encore-nav-link">Why Choose Us</a>
+                    <a href="/contact" class="encore-nav-link">Contact</a>
+                    <a href="/get-started" class="encore-nav-link encore-nav-link-active encore-nav-cta">Get Started</a>
+                </div>
+                
+                <div class="encore-nav-controls">
+                    <button class="encore-search-toggle" id="encoreSearchToggle" aria-label="Search">
+                        <i class="fas fa-search encore-search-icon"></i>
+                    </button>
+                    <button class="encore-theme-toggle" id="encoreThemeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon encore-theme-icon"></i>
+                    </button>
+                    <button class="encore-mobile-toggle" id="encoreMobileToggle" aria-label="Toggle mobile menu">
+                        <span class="encore-hamburger"></span>
+                        <span class="encore-hamburger"></span>
+                        <span class="encore-hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="encore-search-modal" id="encoreSearchModal">
+        <div class="encore-search-overlay" id="encoreSearchOverlay"></div>
+        <div class="encore-search-container">
+            <div class="encore-search-header">
+                <div class="encore-search-input-container">
+                    <i class="fas fa-search encore-search-input-icon"></i>
+                    <input type="text" class="encore-search-input" id="encoreSearchInput" placeholder="Search services, features, or topics...">
+                    <button class="encore-search-clear" id="encoreSearchClear" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <button class="encore-search-close" id="encoreSearchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="encore-search-content">
+                <div class="encore-search-suggestions" id="encoreSearchSuggestions">
+                    <div class="encore-search-suggestion-category">
+                        <h4>Popular Searches</h4>
+                        <div class="encore-search-suggestion-tags">
+                            <span class="encore-search-tag" data-search="website development">Website Development</span>
+                            <span class="encore-search-tag" data-search="automation">Business Automation</span>
+                            <span class="encore-search-tag" data-search="crm">CRM Setup</span>
+                            <span class="encore-search-tag" data-search="email marketing">Email Marketing</span>
+                            <span class="encore-search-tag" data-search="analytics">Google Analytics</span>
+                            <span class="encore-search-tag" data-search="booking system">Booking System</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="encore-search-results" id="encoreSearchResults" style="display: none;">
+                    <div class="encore-search-results-header">
+                        <h4>Search Results</h4>
+                        <span class="encore-search-results-count" id="encoreSearchResultsCount"></span>
+                    </div>
+                    <div class="encore-search-results-list" id="encoreSearchResultsList"></div>
+                </div>
+                <div class="encore-search-no-results" id="encoreSearchNoResults" style="display: none;">
+                    <div class="encore-search-no-results-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>No results found</h4>
+                    <p>Try searching for something else or browse our popular topics above.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get Started Hero Section -->
+    <section class="encore-get-started-hero">
+        <div class="encore-floating-shape"></div>
+        <div class="encore-container">
+            <div class="encore-get-started-hero-content">
+                <div class="encore-get-started-text">
+                    <h1 class="encore-get-started-title">
+                        Ready to Transform Your Business?
+                    </h1>
+                    <p class="encore-get-started-description">
+                        Let's discuss your project and create a custom solution that drives results. 
+                        Fill out the form and we'll get back to you within 24 hours.
+                    </p>
+                    
+                    <div class="encore-get-started-cta">
+                        <p class="encore-get-started-cta-text">
+                            <strong>Fill out the form for your free consultation</strong> and let's get started on transforming your business today!
+                        </p>
+                    </div>
+                    
+                    <div class="encore-get-started-benefits">
+                        <h3 class="encore-get-started-benefits-title">What You'll Get:</h3>
+                        <ul class="encore-get-started-benefits-list">
+                            <li><i class="fas fa-check"></i> Free project assessment</li>
+                            <li><i class="fas fa-check"></i> Custom solution recommendations</li>
+                            <li><i class="fas fa-check"></i> Transparent pricing breakdown</li>
+                            <li><i class="fas fa-check"></i> Detailed project timeline</li>
+                            <li><i class="fas fa-check"></i> No obligation to proceed</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="encore-get-started-form-container">
+                    <form class="encore-contact-form" id="encoreContactForm">
+                        <h3 class="encore-form-title">Get Started Today</h3>
+                        
+                        <div class="encore-form-group">
+                            <input type="text" id="encoreFirstName" name="firstName" class="encore-form-input" placeholder="First Name">
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <input type="text" id="encoreLastName" name="lastName" class="encore-form-input" placeholder="Last Name">
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <input type="email" id="encoreEmail" name="email" class="encore-form-input" placeholder="Email Address">
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <input type="tel" id="encorePhone" name="phone" class="encore-form-input" placeholder="Phone Number (e.g., +63 912 345 6789)">
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <select id="encoreCountry" name="country" class="encore-form-input">
+                                <option value="">Select Country</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Australia">Australia</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Japan">Japan</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Finland">Finland</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Peru">Peru</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Israel">Israel</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <select id="encoreService" name="service" class="encore-form-input">
+                                <option value="">Select Service Interest</option>
+                                <option value="website-ui-ux">Website UI/UX Development</option>
+                                <option value="crm-automation">CRM Automation</option>
+                                <option value="email-campaigns">Email Campaign Automation</option>
+                                <option value="calendar-booking">Calendar Booking System</option>
+                                <option value="business-automation">Business System Automation</option>
+                                <option value="customer-experience">Customer Experience Solutions</option>
+                                <option value="multiple-services">Multiple Services</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="encore-form-group">
+                            <textarea id="encoreMessage" name="message" class="encore-form-textarea" placeholder="Tell us about your project, goals, and any specific requirements" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="encore-btn encore-btn-primary encore-btn-full">
+                            <span class="encore-btn-text">Get Started Now</span>
+                            <i class="fas fa-paper-plane encore-btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Get Started Section -->
+    <section class="encore-why-get-started">
+        <div class="encore-container">
+            <div class="encore-section-header">
+                <h2 class="encore-section-title">Why Get Started Today?</h2>
+                <p class="encore-section-description">
+                    Don't let your competitors get ahead. Start your digital transformation now.
+                </p>
+            </div>
+            
+            <div class="encore-benefits-grid">
+                <div class="encore-benefit-item">
+                    <div class="encore-benefit-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-benefit-title">Fast Results</h3>
+                    <p class="encore-benefit-description">
+                        Get your project started immediately with our streamlined process and quick turnaround times.
+                    </p>
+                </div>
+
+                <div class="encore-benefit-item">
+                    <div class="encore-benefit-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-benefit-title">Risk-Free Start</h3>
+                    <p class="encore-benefit-description">
+                        Free consultation with no obligation. We'll assess your needs and provide transparent recommendations.
+                    </p>
+                </div>
+
+                <div class="encore-benefit-item">
+                    <div class="encore-benefit-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-benefit-title">Proven Results</h3>
+                    <p class="encore-benefit-description">
+                        Our solutions have helped businesses increase efficiency and grow their online presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Alternative Contact Methods -->
+    <section class="encore-alternative-contact">
+        <div class="encore-container">
+            <div class="encore-section-header">
+                <h2 class="encore-section-title">Prefer a Different Approach?</h2>
+                <p class="encore-section-description">
+                    Choose the communication method that works best for you
+                </p>
+            </div>
+            
+            <div class="encore-contact-methods">
+                <div class="encore-contact-method">
+                    <div class="encore-contact-method-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-contact-method-title">Book a Call</h3>
+                    <p class="encore-contact-method-description">
+                        Schedule a 30-minute free consultation call to discuss your project in detail.
+                    </p>
+                    <button class="encore-btn encore-btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aithinkwise/aithinkwise-technology-consultation'});">
+                        Schedule Call
+                    </button>
+                </div>
+                
+                <div class="encore-contact-method">
+                    <div class="encore-contact-method-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-contact-method-title">Send Email</h3>
+                    <p class="encore-contact-method-description">
+                        Drop us an email with your project details and we'll respond within 24 hours.
+                    </p>
+                    <a href="mailto:vanjerson2@gmail.com" class="encore-btn encore-btn-secondary">
+                        Send Email
+                    </a>
+                </div>
+                
+                <div class="encore-contact-method">
+                    <div class="encore-contact-method-icon">
+                        <svg class="encore-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="encore-contact-method-title">Facebook Message</h3>
+                    <p class="encore-contact-method-description">
+                        Connect with us on Facebook for quick questions and updates.
+                    </p>
+                    <a href="https://facebook.com/profile.php?id=61581463806154" target="_blank" rel="noopener noreferrer" class="encore-btn encore-btn-secondary">
+                        Message Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="encore-footer">
+        <div class="encore-container">
+            <div class="encore-footer-content">
+                <div class="encore-footer-brand">
+                    <a href="index.html" class="encore-logo encore-footer-logo">
+                        <img src="Files/AiThinkWise.png" alt="AiThinkWise Logo" class="encore-logo-img">
+                    </a>
+                    <p class="encore-footer-description">
+                        Your all-in-one partner for professional web development and automation solutions. 
+                        Smarter websites, intelligent systems, better customer experiences.
+                    </p>
+                </div>
+                
+                <div class="encore-footer-links">
+                    <div class="encore-footer-section">
+                        <h4 class="encore-footer-title">Services</h4>
+                        <ul class="encore-footer-list">
+                            <li><a href="services.html" class="encore-footer-link">Website Solutions</a></li>
+                            <li><a href="services.html" class="encore-footer-link">Business Automation</a></li>
+                            <li><a href="services.html" class="encore-footer-link">Customer Experience</a></li>
+                            <li><a href="services.html" class="encore-footer-link">Custom Features</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="encore-footer-section">
+                        <h4 class="encore-footer-title">Company</h4>
+                        <ul class="encore-footer-list">
+                            <li><a href="index.html" class="encore-footer-link">About Us</a></li>
+                            <li><a href="why-choose-us.html" class="encore-footer-link">Why Choose Us</a></li>
+                            <li><a href="contact.html" class="encore-footer-link">Contact</a></li>
+                            <li><a href="get-started.html" class="encore-footer-link">Get Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="encore-footer-bottom">
+                <p class="encore-footer-copyright">
+                    &copy; 2025 AiThinkWise. All rights reserved.
+                </p>
+                <div class="encore-footer-social">
+                    <a href="https://facebook.com/profile.php?id=61581463806154" target="_blank" rel="noopener noreferrer" class="encore-social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Alert Container -->
+    <div class="encore-alert-container" id="encoreAlertContainer"></div>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Chat Widget -->
+    <div id="encore-chat-widget" class="encore-chat-widget">
+        <div class="encore-chat-popup" id="encore-chat-popup">
+            <div class="encore-chat-popup-content">
+                <div class="encore-chat-popup-arrow"></div>
+                <div class="encore-chat-popup-text">
+                    <strong>Need help?</strong> Get instant answers about our services!
+                </div>
+                <button class="encore-chat-popup-close" id="encore-chat-popup-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="encore-chat-toggle" id="encore-chat-toggle">
+            <img src="Files/AiThinkWise_2.PNG" alt="AiThinkWise Chat" class="encore-chat-icon">
+            <span class="encore-chat-badge" id="encore-chat-badge">1</span>
+        </div>
+        
+        <div class="encore-chat-window" id="encore-chat-window">
+            <div class="encore-chat-header">
+                <div class="encore-chat-header-info">
+                    <h3>AiThinkWise Support</h3>
+                    <p>We're here to help!</p>
+                </div>
+                <button class="encore-chat-close" id="encore-chat-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="encore-chat-messages" id="encore-chat-messages">
+                <div class="encore-chat-message encore-chat-message-bot">
+                    <div class="encore-chat-avatar">
+                        <img src="Files/AiThinkWise_2.PNG" alt="AiThinkWise AI" class="encore-chat-avatar-img">
+                    </div>
+                    <div class="encore-chat-bubble">
+                        <p>Hello! 👋 Welcome to AiThinkWise! I'm here to help you with any questions about our services. How can I assist you today?</p>
+                        <span class="encore-chat-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="encore-chat-quick-replies">
+                <button class="encore-chat-quick-reply" data-message="What services do you offer?">Our Services</button>
+                <button class="encore-chat-quick-reply" data-message="I need a website for my business">Website Project</button>
+                <button class="encore-chat-quick-reply" data-message="I want to automate my business processes">Automation</button>
+                <button class="encore-chat-quick-reply" data-message="I want a free consultation">Free Consultation</button>
+            </div>
+            
+            <div class="encore-chat-input-container">
+                <input type="text" class="encore-chat-input" id="encore-chat-input" placeholder="Type your message...">
+                <button class="encore-chat-send" id="encore-chat-send">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
