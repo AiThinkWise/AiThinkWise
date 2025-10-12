@@ -1,6 +1,9 @@
 # AiThinkWise Clean URL Redirects
 # This file handles clean URLs without .html extension
 
+# Redirect non-www to www (for SEO consistency)
+https://aithinkwise.com/* https://www.aithinkwise.com/:splat 301!
+
 # Redirect .html URLs to clean URLs
 /services.html /services 301
 /why-choose-us.html /why-choose-us 301
