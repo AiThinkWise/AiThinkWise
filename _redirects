@@ -5,6 +5,9 @@
 # Note: GitHub Pages doesn't support domain redirects in _redirects
 # The redirect needs to be handled at the DNS level or through a service like Cloudflare
 
+# Alternative: Use redirect.html for better SEO
+# This would require setting up the domain to point to redirect.html first
+
 # Redirect .html URLs to clean URLs
 /services.html /services 301
 /why-choose-us.html /why-choose-us 301
