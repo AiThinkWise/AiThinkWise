@@ -1,0 +1,225 @@
+{
+  "site": {
+    "name": "AiThinkWise",
+    "url": "https://www.aithinkwise.com",
+    "description": "Professional web development and business automation solutions in the Philippines. We specialize in website development, CRM automation, email marketing, and website security services.",
+    "keywords": [
+      "web development Philippines",
+      "business automation",
+      "CRM automation",
+      "website development",
+      "email marketing",
+      "website security",
+      "SSL certificate",
+      "DDoS protection",
+      "CDN implementation",
+      "digital transformation",
+      "business automation Philippines",
+      "web design Philippines",
+      "custom website development",
+      "e-commerce development",
+      "mobile app development",
+      "admin dashboard",
+      "customer relationship management",
+      "lead generation",
+      "sales automation",
+      "workflow optimization"
+    ],
+    "author": "AiThinkWise",
+    "publisher": "AiThinkWise",
+    "language": "en",
+    "locale": "en_PH",
+    "country": "Philippines",
+    "region": "Southeast Asia"
+  },
+  "pages": {
+    "home": {
+      "title": "AiThinkWise - Professional Web Development & Business Automation | Philippines",
+      "description": "Leading digital services provider in the Philippines. Professional website development, business automation, CRM systems, and website security solutions. Transform your business with our expert team.",
+      "keywords": [
+        "web development Philippines",
+        "business automation Philippines",
+        "website development services",
+        "digital transformation",
+        "professional web design",
+        "business automation solutions",
+        "CRM automation Philippines"
+      ],
+      "canonical": "https://www.aithinkwise.com/",
+      "og_type": "website",
+      "og_title": "AiThinkWise - Professional Web Development & Business Automation",
+      "og_description": "Transform your business with our professional web development and automation services in the Philippines.",
+      "twitter_card": "summary_large_image",
+      "twitter_title": "AiThinkWise - Professional Web Development & Business Automation",
+      "twitter_description": "Leading digital services provider in the Philippines offering website development, business automation, and CRM solutions."
+    },
+    "services": {
+      "title": "Our Services - Website Development, Business Automation & Security | AiThinkWise",
+      "description": "Comprehensive digital services including website development, CRM automation, email marketing, website security, SSL certificates, DDoS protection, and performance optimization.",
+      "keywords": [
+        "website development services",
+        "business automation services",
+        "CRM automation",
+        "email marketing automation",
+        "website security services",
+        "SSL certificate setup",
+        "DDoS protection",
+        "CDN implementation",
+        "DNS management",
+        "performance monitoring"
+      ],
+      "canonical": "https://www.aithinkwise.com/services.html",
+      "og_type": "website",
+      "og_title": "Our Services - Website Development & Business Automation",
+      "og_description": "Discover our comprehensive digital services including website development, automation, and security solutions.",
+      "twitter_card": "summary_large_image"
+    },
+    "contact": {
+      "title": "Contact Us - Get Your Free Consultation | AiThinkWise",
+      "description": "Get in touch with AiThinkWise for professional web development and business automation services. Free consultation available. Contact us today!",
+      "keywords": [
+        "contact web developer Philippines",
+        "free consultation",
+        "web development quote",
+        "business automation consultation",
+        "get started",
+        "contact AiThinkWise"
+      ],
+      "canonical": "https://www.aithinkwise.com/contact.html",
+      "og_type": "website",
+      "og_title": "Contact AiThinkWise - Free Consultation",
+      "og_description": "Get your free consultation for professional web development and business automation services."
+    },
+    "get-started": {
+      "title": "Get Started - Begin Your Digital Transformation | AiThinkWise",
+      "description": "Start your digital transformation journey with AiThinkWise. Professional web development, business automation, and digital solutions for your business growth.",
+      "keywords": [
+        "get started",
+        "digital transformation",
+        "begin web development",
+        "start business automation",
+        "digital solutions",
+        "business growth"
+      ],
+      "canonical": "https://www.aithinkwise.com/get-started.html",
+      "og_type": "website",
+      "og_title": "Get Started with AiThinkWise",
+      "og_description": "Begin your digital transformation journey with our professional services."
+    },
+    "why-choose-us": {
+      "title": "Why Choose AiThinkWise - Professional Digital Services | Philippines",
+      "description": "Discover why businesses choose AiThinkWise for their web development and automation needs. Professional expertise, proven results, and exceptional service.",
+      "keywords": [
+        "why choose AiThinkWise",
+        "professional web development",
+        "proven results",
+        "expert team",
+        "quality service",
+        "reliable partner"
+      ],
+      "canonical": "https://www.aithinkwise.com/why-choose-us.html",
+      "og_type": "website",
+      "og_title": "Why Choose AiThinkWise",
+      "og_description": "Discover why businesses trust AiThinkWise for their digital transformation needs."
+    }
+  },
+  "structured_data": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AiThinkWise",
+      "url": "https://www.aithinkwise.com",
+      "logo": "https://www.aithinkwise.com/Files/AiThinkWise_2.PNG",
+      "description": "Professional web development and business automation solutions in the Philippines",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PH",
+        "addressRegion": "Philippines"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.aithinkwise.com/contact.html"
+      },
+      "sameAs": [
+        "https://www.aithinkwise.com"
+      ]
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AiThinkWise",
+      "url": "https://www.aithinkwise.com",
+      "description": "Professional web development and business automation solutions",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AiThinkWise"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.aithinkwise.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    "services": [
+      {
+        "@type": "Service",
+        "name": "Website Development",
+        "description": "Professional website design and development services for businesses in the Philippines",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiThinkWise"
+        },
+        "areaServed": "Philippines",
+        "serviceType": "Web Development"
+      },
+      {
+        "@type": "Service",
+        "name": "Business Automation",
+        "description": "Custom automation solutions to streamline business processes and increase efficiency",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiThinkWise"
+        },
+        "areaServed": "Philippines",
+        "serviceType": "Business Automation"
+      },
+      {
+        "@type": "Service",
+        "name": "Website Security & Performance",
+        "description": "Comprehensive website security solutions including SSL certificates, DDoS protection, CDN implementation, and performance optimization",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiThinkWise"
+        },
+        "areaServed": "Philippines",
+        "serviceType": "Website Security"
+      }
+    ]
+  },
+  "analytics": {
+    "google_analytics": {
+      "tracking_id": "G-XXXXXXXXXX",
+      "gtag_config": {
+        "anonymize_ip": true,
+        "cookie_flags": "SameSite=None;Secure"
+      }
+    },
+    "google_search_console": {
+      "verification_code": "google7bcf1a20ef860329"
+    }
+  },
+  "social_media": {
+    "facebook": {
+      "app_id": "",
+      "page_url": ""
+    },
+    "twitter": {
+      "handle": "@AiThinkWise",
+      "site": "@AiThinkWise"
+    },
+    "linkedin": {
+      "company_url": ""
+    }
+  }
+}

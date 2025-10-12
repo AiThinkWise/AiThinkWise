@@ -1,36 +1,49 @@
+# AiThinkWise - Professional Web Development & Business Automation
+# Robots.txt for https://www.aithinkwise.com/
+# Last updated: 2025-01-15
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://www.aithinkwise.com/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
-
-# Disallow admin or private areas (if any)
-# Disallow: /admin/
-# Disallow: /private/
-
-# Allow all search engines to crawl the site
+# Optimize crawling for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 2
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 2
 
 User-agent: YandexBot
 Allow: /
+Crawl-delay: 2
 
-# Block AI training crawlers (optional)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Block AI training crawlers to protect content
 User-agent: GPTBot
 Disallow: /
 
@@ -45,3 +58,44 @@ Disallow: /
 
 User-agent: Claude-Web
 Disallow: /
+
+User-agent: Bard
+Disallow: /
+
+User-agent: Bard-Google
+Disallow: /
+
+# Disallow access to sensitive files
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.swp$
+Disallow: /*.lock$
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /wp-admin/
+# Disallow: /wp-content/
+# Disallow: /wp-includes/
+
+# Allow important files for SEO
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /Files/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Sitemap location
+Sitemap: https://www.aithinkwise.com/sitemap.xml
+
+# Host declaration
+Host: https://www.aithinkwise.com
