@@ -2,7 +2,8 @@
 # This file handles clean URLs without .html extension
 
 # Redirect non-www to www (for SEO consistency)
-https://aithinkwise.com/* https://www.aithinkwise.com/:splat 301!
+# Note: GitHub Pages doesn't support domain redirects in _redirects
+# The redirect needs to be handled at the DNS level or through a service like Cloudflare
 
 # Redirect .html URLs to clean URLs
 /services.html /services 301

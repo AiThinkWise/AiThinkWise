@@ -11,6 +11,13 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
     
+    <!-- Redirect non-www to www -->
+    <script>
+        if (window.location.hostname === 'aithinkwise.com') {
+            window.location.replace('https://www.aithinkwise.com' + window.location.pathname + window.location.search + window.location.hash);
+        }
+    </script>
+    
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://connect.facebook.net https://fonts.googleapis.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://connect.facebook.net https://calendly.com https://script.google.com; frame-src https://calendly.com; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -1027,6 +1034,11 @@
         // Immediate URL cleaning for index.html
         if (window.location.pathname.includes('index.html')) {
             window.location.replace('/');
+        }
+        
+        // Redirect non-www to www for SEO consistency
+        if (window.location.hostname === 'aithinkwise.com') {
+            window.location.replace('https://www.aithinkwise.com' + window.location.pathname + window.location.search + window.location.hash);
         }
     </script>
 </body>
