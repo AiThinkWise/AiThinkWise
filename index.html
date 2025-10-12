@@ -11,19 +11,20 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
     
-    <!-- Redirect non-www to www -->
+    <!-- Redirect non-www to www - TEMPORARILY DISABLED to test Cloudflare Page Rule -->
+    <!-- 
     <script>
         if (window.location.hostname === 'aithinkwise.com') {
             window.location.replace('https://www.aithinkwise.com' + window.location.pathname + window.location.search + window.location.hash);
         }
     </script>
     
-    <!-- Meta redirect as backup for SEO -->
     <script>
         if (window.location.hostname === 'aithinkwise.com') {
             document.write('<meta http-equiv="refresh" content="0; url=https://www.aithinkwise.com' + window.location.pathname + window.location.search + window.location.hash + '">');
         }
     </script>
+    -->
     
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://connect.facebook.net https://fonts.googleapis.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://connect.facebook.net https://calendly.com https://script.google.com; frame-src https://calendly.com; object-src 'none'; base-uri 'self'; form-action 'self';">
@@ -1043,10 +1044,12 @@
             window.location.replace('/');
         }
         
-        // Redirect non-www to www for SEO consistency
+        // Redirect non-www to www for SEO consistency - TEMPORARILY DISABLED to test Cloudflare Page Rule
+        /*
         if (window.location.hostname === 'aithinkwise.com') {
             window.location.replace('https://www.aithinkwise.com' + window.location.pathname + window.location.search + window.location.hash);
         }
+        */
     </script>
 </body>
 </html>
