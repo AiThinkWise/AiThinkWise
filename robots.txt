@@ -1,5 +1,5 @@
 # AiThinkWise - Professional Web Development & Business Automation
-# Robots.txt for https://www.aithinkwise.com/
+# Robots.txt for https://aithinkwise.com/
 # Last updated: 2025-01-15
 
 # Allow all search engines to crawl the site
@@ -95,7 +95,7 @@ Allow: /*.svg
 Allow: /*.webp
 
 # Sitemap location
-Sitemap: https://www.aithinkwise.com/sitemap.xml
+Sitemap: https://aithinkwise.com/sitemap.xml
 
 # Host declaration
-Host: https://www.aithinkwise.com
+Host: https://aithinkwise.com

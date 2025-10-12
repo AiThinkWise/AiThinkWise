@@ -1,14 +1,13 @@
 # AiThinkWise - Advanced SEO Configuration
-# .htaccess for https://www.aithinkwise.com/
+# .htaccess for https://aithinkwise.com/
 # Last updated: 2025-01-15
 
 # Enable mod_rewrite
 RewriteEngine On
 
-# Force HTTPS and www
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://www.aithinkwise.com/$1 [R=301,L]
+# Force HTTPS (remove www redirect since it's not working)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://aithinkwise.com/$1 [R=301,L]
 
 # Remove trailing slashes from URLs (except for directories)
 RewriteCond %{REQUEST_FILENAME} !-d
