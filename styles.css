@@ -3041,7 +3041,7 @@ body {
 
 .encore-problem-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
   background: var(--encore-error-50);
@@ -3049,6 +3049,7 @@ body {
   border-radius: 0.75rem;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .encore-problem-item:hover {
@@ -3060,12 +3061,16 @@ body {
   color: var(--encore-error-500);
   font-size: 1.25rem;
   min-width: 1.5rem;
+  text-align: left;
+  flex-shrink: 0;
 }
 
 .encore-problem-item span {
   color: var(--encore-text-primary);
   font-weight: 500;
   font-size: var(--encore-font-size-base);
+  text-align: left;
+  flex: 1;
 }
 
 .encore-marketing-solution {
