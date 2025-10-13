@@ -2970,6 +2970,466 @@ body {
 }
 
 /* ========================================
+   MARKETING STRATEGY SECTION
+   ======================================== */
+
+.encore-marketing-strategy {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--encore-bg-primary) 0%, var(--encore-bg-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-marketing-strategy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.encore-marketing-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.encore-marketing-text {
+  max-width: 600px;
+}
+
+.encore-marketing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--encore-primary-500), var(--encore-primary-600));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: var(--encore-font-size-sm);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--encore-shadow-md);
+}
+
+.encore-marketing-badge i {
+  font-size: 1rem;
+}
+
+.encore-marketing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--encore-text-primary);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--encore-text-primary), var(--encore-primary-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.encore-marketing-problems {
+  margin-bottom: 2.5rem;
+}
+
+.encore-problem-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--encore-error-50);
+  border: 1px solid var(--encore-error-200);
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.encore-problem-item:hover {
+  background: var(--encore-error-100);
+  transform: translateX(0.5rem);
+}
+
+.encore-problem-icon {
+  color: var(--encore-error-500);
+  font-size: 1.25rem;
+  min-width: 1.5rem;
+}
+
+.encore-problem-item span {
+  color: var(--encore-text-primary);
+  font-weight: 500;
+  font-size: var(--encore-font-size-base);
+}
+
+.encore-marketing-solution {
+  background: linear-gradient(135deg, var(--encore-success-50), var(--encore-primary-50));
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--encore-success-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-marketing-solution::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--encore-success-500), var(--encore-primary-500));
+}
+
+.encore-solution-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--encore-text-primary);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.encore-solution-highlight {
+  color: var(--encore-primary-600);
+  position: relative;
+}
+
+.encore-solution-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--encore-primary-500), var(--encore-success-500));
+  border-radius: 2px;
+}
+
+.encore-solution-description {
+  color: var(--encore-text-secondary);
+  font-size: var(--encore-font-size-lg);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.encore-marketing-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encore-marketing-card {
+  background: var(--encore-bg-card);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: var(--encore-shadow-2xl);
+  border: 1px solid var(--encore-border-primary);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-marketing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--encore-primary-500), var(--encore-success-500), var(--encore-warning-500));
+}
+
+.encore-marketing-card-header {
+  margin-bottom: 2rem;
+}
+
+.encore-marketing-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.encore-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--encore-primary-50), var(--encore-bg-secondary));
+  border-radius: 1rem;
+  border: 1px solid var(--encore-primary-200);
+}
+
+.encore-stat-icon {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--encore-primary-500), var(--encore-primary-600));
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.encore-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.encore-stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--encore-text-primary);
+  line-height: 1;
+}
+
+.encore-stat-label {
+  font-size: var(--encore-font-size-sm);
+  color: var(--encore-text-secondary);
+  font-weight: 500;
+}
+
+.encore-marketing-features {
+  margin-top: 1.5rem;
+}
+
+.encore-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.encore-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--encore-bg-secondary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--encore-border-primary);
+  transition: all 0.3s ease;
+}
+
+.encore-feature-item:hover {
+  background: var(--encore-primary-50);
+  border-color: var(--encore-primary-200);
+  transform: translateY(-2px);
+}
+
+.encore-feature-icon {
+  color: var(--encore-primary-500);
+  font-size: 1rem;
+  min-width: 1.25rem;
+}
+
+.encore-feature-item span {
+  font-size: var(--encore-font-size-sm);
+  color: var(--encore-text-primary);
+  font-weight: 500;
+}
+
+.encore-marketing-cta {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.encore-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--encore-bg-card), var(--encore-bg-secondary));
+  padding: 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--encore-border-primary);
+  box-shadow: var(--encore-shadow-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-cta-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--encore-primary-500), var(--encore-success-500));
+}
+
+.encore-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--encore-text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.encore-cta-description {
+  font-size: var(--encore-font-size-lg);
+  color: var(--encore-text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.encore-cta-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.encore-benefit-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--encore-success-50);
+  border: 1px solid var(--encore-success-200);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.encore-benefit-highlight:hover {
+  background: var(--encore-success-100);
+  transform: translateX(0.5rem);
+}
+
+.encore-benefit-highlight i {
+  color: var(--encore-success-500);
+  font-size: 1.25rem;
+  min-width: 1.5rem;
+}
+
+.encore-benefit-highlight span {
+  color: var(--encore-text-primary);
+  font-weight: 500;
+  font-size: var(--encore-font-size-base);
+}
+
+.encore-cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.encore-btn-large {
+  padding: 1rem 2rem;
+  font-size: var(--encore-font-size-lg);
+  font-weight: 600;
+  min-width: 200px;
+}
+
+.encore-btn-large .encore-btn-icon {
+  margin-right: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.encore-cta-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--encore-text-secondary);
+  font-size: var(--encore-font-size-base);
+  margin: 0;
+  padding: 1rem;
+  background: var(--encore-warning-50);
+  border: 1px solid var(--encore-warning-200);
+  border-radius: 0.75rem;
+}
+
+.encore-cta-note i {
+  color: var(--encore-warning-500);
+  font-size: 1.25rem;
+}
+
+.encore-cta-note strong {
+  color: var(--encore-text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .encore-marketing-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .encore-marketing-title {
+    font-size: 2rem;
+  }
+  
+  .encore-marketing-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .encore-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .encore-marketing-strategy {
+    padding: 4rem 0;
+  }
+  
+  .encore-marketing-title {
+    font-size: 1.75rem;
+  }
+  
+  .encore-solution-title {
+    font-size: 1.5rem;
+  }
+  
+  .encore-cta-content {
+    padding: 2rem;
+  }
+  
+  .encore-cta-title {
+    font-size: 1.75rem;
+  }
+  
+  .encore-cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .encore-btn-large {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .encore-marketing-card {
+    padding: 1.5rem;
+  }
+  
+  .encore-stat-item {
+    padding: 1rem;
+  }
+  
+  .encore-cta-content {
+    padding: 1.5rem;
+  }
+  
+  .encore-marketing-title {
+    font-size: 1.5rem;
+  }
+  
+  .encore-cta-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========================================
    WHY CHOOSE US SECTION
    ======================================== */
 
@@ -13321,626 +13781,4 @@ body {
     .encore-comparison-title {
         font-size: var(--encore-font-size-lg);
     }
-}
-
-/* ========================================
-   MARKETING STRATEGY SECTION STYLES
-   ======================================== */
-
-.encore-marketing-strategy {
-  padding: 6rem 0;
-  background: linear-gradient(135deg, var(--encore-bg-primary) 0%, var(--encore-bg-secondary) 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.encore-marketing-strategy::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
-  z-index: 0;
-}
-
-.encore-marketing-strategy > .encore-container {
-  position: relative;
-  z-index: 1;
-}
-
-/* Problem Section */
-.encore-problem-section {
-  text-align: center;
-  margin-bottom: 5rem;
-  padding: 3rem 0;
-  background: var(--encore-bg-primary);
-  border-radius: 1rem;
-  box-shadow: var(--encore-shadow-lg);
-}
-
-.encore-problem-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--encore-text-primary);
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.encore-problem-subtitle {
-  font-size: 1.25rem;
-  color: var(--encore-text-secondary);
-  margin-bottom: 3rem;
-  font-weight: 500;
-}
-
-.encore-problem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.encore-problem-item {
-  padding: 2.5rem 2rem;
-  background: var(--encore-bg-primary);
-  border-radius: 1rem;
-  border: 2px solid var(--encore-border-primary);
-  transition: all 0.3s ease;
-  box-shadow: var(--encore-shadow-sm);
-  position: relative;
-  overflow: hidden;
-}
-
-.encore-problem-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--encore-primary-400), var(--encore-accent-400));
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.encore-problem-item:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--encore-shadow-xl);
-  border-color: var(--encore-primary-300);
-}
-
-.encore-problem-item:hover::before {
-  transform: scaleX(1);
-}
-
-.encore-problem-icon {
-  margin-bottom: 1.5rem;
-}
-
-.encore-problem-icon .encore-icon {
-  width: 80px;
-  height: 80px;
-  color: var(--encore-error-500);
-  transition: all 0.3s ease;
-}
-
-.encore-problem-item:hover .encore-problem-icon .encore-icon {
-  transform: scale(1.1);
-  color: var(--encore-error-600);
-}
-
-.encore-problem-item h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--encore-text-primary);
-  margin-bottom: 1rem;
-}
-
-.encore-problem-item p {
-  color: var(--encore-text-secondary);
-  line-height: 1.6;
-}
-
-/* Solution Introduction */
-.encore-solution-intro {
-  text-align: center;
-  margin-bottom: 5rem;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--encore-primary-50) 0%, var(--encore-accent-50) 100%);
-  border-radius: 1rem;
-  border: 1px solid var(--encore-primary-200);
-}
-
-.encore-solution-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--encore-text-primary);
-  margin-bottom: 1rem;
-}
-
-.encore-solution-subtitle {
-  font-size: 1.5rem;
-  color: var(--encore-primary-600);
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-.encore-solution-description {
-  font-size: 1.125rem;
-  color: var(--encore-text-secondary);
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-/* Solution Showcase */
-.encore-solution-showcase {
-  margin-bottom: 5rem;
-}
-
-.encore-solution-header {
-  text-align: center;
-  margin-bottom: 4rem;
-  padding: 4rem 0;
-  background: var(--encore-bg-primary);
-  border-radius: 1rem;
-  border: 1px solid var(--encore-border-primary);
-  box-shadow: var(--encore-shadow-sm);
-}
-
-.encore-solution-header-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.encore-solution-main-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--encore-text-primary);
-  margin-bottom: 1rem;
-}
-
-.encore-solution-main-subtitle {
-  font-size: 1.25rem;
-  color: var(--encore-text-secondary);
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  line-height: 1.6;
-}
-
-/* Clean Strategy Points */
-.encore-strategy-points {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.encore-strategy-point {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 1.5rem;
-  background: linear-gradient(135deg, var(--encore-bg-primary) 0%, var(--encore-bg-secondary) 100%);
-  border-radius: 1rem;
-  border: 1px solid var(--encore-border-primary);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.encore-strategy-point::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--encore-primary-400), var(--encore-accent-400));
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.encore-strategy-point:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--encore-shadow-lg);
-  border-color: var(--encore-primary-300);
-}
-
-.encore-strategy-point:hover::before {
-  transform: scaleX(1);
-}
-
-.encore-point-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--encore-primary-100) 0%, var(--encore-accent-100) 100%);
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--encore-primary-300);
-  box-shadow: var(--encore-shadow-sm);
-}
-
-.encore-point-icon .encore-icon {
-  width: 20px;
-  height: 20px;
-  color: var(--encore-primary-700);
-}
-
-.encore-point-content h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--encore-text-primary);
-  margin-bottom: 0.75rem;
-}
-
-.encore-point-content p {
-  color: var(--encore-text-secondary);
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-/* Enhanced Value Statement */
-.encore-value-statement {
-  background: linear-gradient(135deg, var(--encore-primary-50) 0%, var(--encore-accent-50) 100%);
-  border-radius: 1rem;
-  padding: 2.5rem;
-  border: 2px solid var(--encore-primary-200);
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.encore-value-statement::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, var(--encore-primary-100) 0%, transparent 70%);
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.encore-value-statement > * {
-  position: relative;
-  z-index: 1;
-}
-
-.encore-value-text {
-  font-size: 1.125rem;
-  color: var(--encore-text-secondary);
-  line-height: 1.7;
-  margin: 0;
-  text-align: center;
-}
-
-.encore-value-text strong {
-  color: var(--encore-primary-700);
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--encore-primary-600), var(--encore-accent-600));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.encore-solution-features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-}
-
-.encore-solution-feature {
-  display: flex;
-  gap: 1.5rem;
-  padding: 2.5rem;
-  background: var(--encore-bg-primary);
-  border-radius: 1rem;
-  border: 2px solid var(--encore-border-primary);
-  transition: all 0.3s ease;
-  box-shadow: var(--encore-shadow-md);
-  position: relative;
-  overflow: hidden;
-}
-
-.encore-solution-feature::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--encore-success-400), var(--encore-primary-400));
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.encore-solution-feature:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--encore-shadow-xl);
-  border-color: var(--encore-primary-300);
-}
-
-.encore-solution-feature:hover::before {
-  transform: scaleX(1);
-}
-
-.encore-solution-feature-icon {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--encore-primary-50) 0%, var(--encore-accent-50) 100%);
-  border-radius: 1rem;
-  border: 2px solid var(--encore-primary-200);
-  transition: all 0.3s ease;
-}
-
-.encore-solution-feature-icon .encore-icon {
-  width: 40px;
-  height: 40px;
-  color: var(--encore-primary-600);
-  transition: all 0.3s ease;
-}
-
-.encore-solution-feature:hover .encore-solution-feature-icon {
-  background: linear-gradient(135deg, var(--encore-primary-100) 0%, var(--encore-accent-100) 100%);
-  border-color: var(--encore-primary-400);
-  transform: scale(1.05);
-}
-
-.encore-solution-feature:hover .encore-solution-feature-icon .encore-icon {
-  color: var(--encore-primary-700);
-  transform: scale(1.1);
-}
-
-.encore-solution-feature-content h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--encore-text-primary);
-  margin-bottom: 0.75rem;
-}
-
-.encore-solution-feature-content p {
-  color: var(--encore-text-secondary);
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-/* Value Proposition */
-.encore-value-proposition {
-  text-align: center;
-  margin-bottom: 5rem;
-  padding: 4rem 2rem;
-  background: var(--encore-bg-primary);
-  border-radius: 1rem;
-  border: 2px solid var(--encore-primary-200);
-  box-shadow: var(--encore-shadow-lg);
-}
-
-.encore-value-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--encore-text-primary);
-  margin-bottom: 1.5rem;
-}
-
-.encore-value-description {
-  font-size: 1.125rem;
-  color: var(--encore-text-secondary);
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  line-height: 1.7;
-}
-
-.encore-value-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.encore-stat {
-  text-align: center;
-}
-
-.encore-stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--encore-primary-600);
-  margin-bottom: 0.5rem;
-}
-
-.encore-stat-label {
-  font-size: 1rem;
-  color: var(--encore-text-secondary);
-  font-weight: 500;
-}
-
-/* Marketing CTA */
-.encore-marketing-cta {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--encore-primary-600) 0%, var(--encore-primary-700) 100%);
-  border-radius: 1rem;
-  color: var(--encore-text-inverse);
-  box-shadow: var(--encore-shadow-xl);
-}
-
-.encore-marketing-cta-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: var(--encore-text-inverse);
-}
-
-.encore-marketing-cta-description {
-  font-size: 1.125rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.encore-marketing-cta-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.encore-btn-large {
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  border-radius: 0.75rem;
-  min-width: 200px;
-}
-
-.encore-marketing-cta .encore-btn-primary {
-  background: var(--encore-text-inverse);
-  color: var(--encore-primary-600);
-  border: 2px solid var(--encore-text-inverse);
-}
-
-.encore-marketing-cta .encore-btn-primary:hover {
-  background: transparent;
-  color: var(--encore-text-inverse);
-  border-color: var(--encore-text-inverse);
-}
-
-.encore-marketing-cta .encore-btn-secondary {
-  background: transparent;
-  color: var(--encore-text-inverse);
-  border: 2px solid var(--encore-text-inverse);
-}
-
-.encore-marketing-cta .encore-btn-secondary:hover {
-  background: var(--encore-text-inverse);
-  color: var(--encore-primary-600);
-}
-
-.encore-marketing-cta-note {
-  font-size: 1.125rem;
-  opacity: 0.9;
-  margin: 0;
-}
-
-/* Responsive Design for Marketing Strategy */
-@media (max-width: 768px) {
-  .encore-marketing-strategy {
-    padding: 4rem 0;
-  }
-  
-  .encore-problem-title {
-    font-size: 2rem;
-  }
-  
-  .encore-solution-main-title {
-    font-size: 2rem;
-  }
-  
-  .encore-solution-header {
-    padding: 3rem 0;
-  }
-  
-  .encore-solution-header-content {
-    padding: 0 1rem;
-  }
-  
-  .encore-strategy-points {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .encore-strategy-point {
-    padding: 1.5rem;
-  }
-  
-  .encore-point-icon {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 0.75rem;
-  }
-  
-  .encore-point-icon .encore-icon {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .encore-value-statement {
-    padding: 2rem 1.5rem;
-  }
-  
-  .encore-value-title,
-  .encore-marketing-cta-title {
-    font-size: 1.875rem;
-  }
-  
-  .encore-solution-features {
-    grid-template-columns: 1fr;
-  }
-  
-  .encore-solution-feature {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .encore-solution-feature-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .encore-solution-feature-icon .encore-icon {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .encore-problem-icon .encore-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .encore-marketing-cta-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .encore-btn-large {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .encore-problem-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .encore-value-stats {
-    grid-template-columns: 1fr;
-  }
-  
-  .encore-solution-intro,
-  .encore-value-proposition,
-  .encore-marketing-cta {
-    padding: 2rem 1rem;
-  }
 }
