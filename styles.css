@@ -13385,17 +13385,36 @@ body {
 }
 
 .encore-problem-item {
-  padding: 2rem;
-  background: var(--encore-bg-secondary);
-  border-radius: 0.75rem;
-  border: 1px solid var(--encore-border-primary);
+  padding: 2.5rem 2rem;
+  background: var(--encore-bg-primary);
+  border-radius: 1rem;
+  border: 2px solid var(--encore-border-primary);
   transition: all 0.3s ease;
+  box-shadow: var(--encore-shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-problem-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--encore-primary-400), var(--encore-accent-400));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .encore-problem-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: var(--encore-shadow-xl);
   border-color: var(--encore-primary-300);
+}
+
+.encore-problem-item:hover::before {
+  transform: scaleX(1);
 }
 
 .encore-problem-icon {
@@ -13403,11 +13422,19 @@ body {
 }
 
 .encore-problem-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
   object-fit: cover;
   border: 3px solid var(--encore-primary-200);
+  box-shadow: var(--encore-shadow-md);
+  transition: all 0.3s ease;
+}
+
+.encore-problem-image:hover {
+  transform: scale(1.05);
+  box-shadow: var(--encore-shadow-lg);
+  border-color: var(--encore-primary-400);
 }
 
 .encore-problem-item h3 {
@@ -13488,18 +13515,36 @@ body {
 .encore-solution-feature {
   display: flex;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 2.5rem;
   background: var(--encore-bg-primary);
   border-radius: 1rem;
-  border: 1px solid var(--encore-border-primary);
+  border: 2px solid var(--encore-border-primary);
   transition: all 0.3s ease;
-  box-shadow: var(--encore-shadow-sm);
+  box-shadow: var(--encore-shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.encore-solution-feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--encore-success-400), var(--encore-primary-400));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .encore-solution-feature:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--encore-shadow-lg);
+  transform: translateY(-5px);
+  box-shadow: var(--encore-shadow-xl);
   border-color: var(--encore-primary-300);
+}
+
+.encore-solution-feature:hover::before {
+  transform: scaleX(1);
 }
 
 .encore-solution-feature-image {
@@ -13507,11 +13552,19 @@ body {
 }
 
 .encore-feature-img {
-  width: 120px;
-  height: 80px;
-  border-radius: 0.5rem;
+  width: 150px;
+  height: 100px;
+  border-radius: 0.75rem;
   object-fit: cover;
   border: 2px solid var(--encore-border-primary);
+  box-shadow: var(--encore-shadow-md);
+  transition: all 0.3s ease;
+}
+
+.encore-feature-img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--encore-shadow-lg);
+  border-color: var(--encore-primary-300);
 }
 
 .encore-solution-feature-content h3 {
@@ -13680,7 +13733,12 @@ body {
   
   .encore-feature-img {
     width: 100%;
-    height: 150px;
+    height: 200px;
+  }
+  
+  .encore-problem-image {
+    width: 80px;
+    height: 80px;
   }
   
   .encore-marketing-cta-actions {
