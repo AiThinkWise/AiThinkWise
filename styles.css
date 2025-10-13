@@ -3181,6 +3181,7 @@ body {
 .encore-stat-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .encore-stat-number {
@@ -3191,9 +3192,10 @@ body {
 }
 
 .encore-stat-label {
-  font-size: var(--encore-font-size-sm);
-  color: var(--encore-text-secondary);
-  font-weight: 500;
+  font-size: var(--encore-font-size-base);
+  color: var(--encore-text-primary);
+  font-weight: 600;
+  text-align: center;
 }
 
 .encore-marketing-features {
