@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
     initializeNavigation();
     initializeContactForm();
+    initializeNewsletterForm();
     initializeAnimations();
     initializeSmoothScrolling();
     initializeAccordion();
@@ -308,6 +309,119 @@ function initializeContactForm() {
             setButtonLoading(submitBtn, btnText, btnIcon, false);
         }
     });
+}
+
+// ========================================
+// NEWSLETTER SUBSCRIPTION
+// ========================================
+
+function initializeNewsletterForm() {
+    // Wait for EmailJS to be available
+    if (typeof emailjs === 'undefined') {
+        console.error('EmailJS not loaded yet for newsletter, retrying...');
+        setTimeout(initializeNewsletterForm, 100);
+        return;
+    }
+    
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (!newsletterForm) return;
+    
+    const submitBtn = newsletterForm.querySelector('button[type="submit"]');
+    const btnText = submitBtn.querySelector('.newsletter-btn-text');
+    const btnIcon = submitBtn.querySelector('.newsletter-btn-icon');
+    const emailInput = newsletterForm.querySelector('input[type="email"]');
+    
+    newsletterForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const email = emailInput.value.trim();
+        
+        // Validate email
+        if (!isValidEmail(email)) {
+            showNewsletterAlert('Please enter a valid email address.', 'error');
+            return;
+        }
+        
+        // Show loading state
+        setNewsletterButtonLoading(submitBtn, btnText, btnIcon, true);
+        
+        try {
+            // Prepare template parameters
+            const templateParams = {
+                to_email: 'vanjerson2@gmail.com', // Your email
+                subscriber_email: email,
+                subscription_date: new Date().toLocaleDateString(),
+                website_url: window.location.href,
+                user_agent: navigator.userAgent
+            };
+            
+            // Send email using EmailJS
+            const response = await emailjs.send(
+                'service_lzcfyrv', // Using your existing service
+                'template_xzgpe3a', // Your newsletter template ID
+                templateParams
+            );
+            
+            if (response.status === 200) {
+                showNewsletterAlert('Thank you for subscribing! You\'ll receive our latest updates soon.', 'success');
+                emailInput.value = '';
+            } else {
+                throw new Error('EmailJS returned non-200 status');
+            }
+            
+        } catch (error) {
+            console.error('Newsletter subscription error:', error);
+            showNewsletterAlert('Sorry, there was an error subscribing. Please try again later.', 'error');
+        } finally {
+            // Reset button state
+            setNewsletterButtonLoading(submitBtn, btnText, btnIcon, false);
+        }
+    });
+}
+
+function setNewsletterButtonLoading(button, textElement, iconElement, isLoading) {
+    if (isLoading) {
+        button.disabled = true;
+        textElement.textContent = 'Subscribing...';
+        iconElement.className = 'fas fa-spinner fa-spin newsletter-btn-icon';
+        button.classList.add('newsletter-btn-loading');
+    } else {
+        button.disabled = false;
+        textElement.textContent = 'Subscribe';
+        iconElement.className = 'fas fa-paper-plane newsletter-btn-icon';
+        button.classList.remove('newsletter-btn-loading');
+    }
+}
+
+function showNewsletterAlert(message, type) {
+    // Remove existing alerts
+    const existingAlert = document.querySelector('.newsletter-alert');
+    if (existingAlert) {
+        existingAlert.remove();
+    }
+    
+    // Create alert element
+    const alert = document.createElement('div');
+    alert.className = `newsletter-alert newsletter-alert-${type}`;
+    alert.innerHTML = `
+        <div class="newsletter-alert-content">
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+            <span>${message}</span>
+        </div>
+    `;
+    
+    // Insert after newsletter form
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+        newsletterForm.parentNode.insertBefore(alert, newsletterForm.nextSibling);
+        
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            if (alert.parentNode) {
+                alert.parentNode.removeChild(alert);
+            }
+        }, 5000);
+    }
 }
 
 function validateForm() {
