@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "AiThinkWise",
-    "url": "https://www.aithinkwise.com",
+    "url": "https://aithinkwise.com",
     "description": "Professional web development and business automation solutions in the Philippines. We specialize in website development, CRM automation, email marketing, and website security services.",
     "keywords": [
       "web development Philippines",
@@ -45,7 +45,7 @@
         "business automation solutions",
         "CRM automation Philippines"
       ],
-      "canonical": "https://www.aithinkwise.com/",
+      "canonical": "https://aithinkwise.com/",
       "og_type": "website",
       "og_title": "AiThinkWise - Professional Web Development & Business Automation",
       "og_description": "Transform your business with our professional web development and automation services in the Philippines.",
@@ -68,7 +68,7 @@
         "DNS management",
         "performance monitoring"
       ],
-      "canonical": "https://www.aithinkwise.com/services.html",
+      "canonical": "https://aithinkwise.com/services",
       "og_type": "website",
       "og_title": "Our Services - Website Development & Business Automation",
       "og_description": "Discover our comprehensive digital services including website development, automation, and security solutions.",
@@ -85,7 +85,7 @@
         "get started",
         "contact AiThinkWise"
       ],
-      "canonical": "https://www.aithinkwise.com/contact.html",
+      "canonical": "https://aithinkwise.com/contact",
       "og_type": "website",
       "og_title": "Contact AiThinkWise - Free Consultation",
       "og_description": "Get your free consultation for professional web development and business automation services."
@@ -101,7 +101,7 @@
         "digital solutions",
         "business growth"
       ],
-      "canonical": "https://www.aithinkwise.com/get-started.html",
+      "canonical": "https://aithinkwise.com/get-started",
       "og_type": "website",
       "og_title": "Get Started with AiThinkWise",
       "og_description": "Begin your digital transformation journey with our professional services."
@@ -117,7 +117,7 @@
         "quality service",
         "reliable partner"
       ],
-      "canonical": "https://www.aithinkwise.com/why-choose-us.html",
+      "canonical": "https://aithinkwise.com/why-choose-us",
       "og_type": "website",
       "og_title": "Why Choose AiThinkWise",
       "og_description": "Discover why businesses trust AiThinkWise for their digital transformation needs."
@@ -128,8 +128,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "AiThinkWise",
-      "url": "https://www.aithinkwise.com",
-      "logo": "https://www.aithinkwise.com/Files/AiThinkWise_2.PNG",
+      "url": "https://aithinkwise.com",
+      "logo": "https://aithinkwise.com/Files/AiThinkWise_2.PNG",
       "description": "Professional web development and business automation solutions in the Philippines",
       "address": {
         "@type": "PostalAddress",
@@ -139,17 +139,17 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "url": "https://www.aithinkwise.com/contact.html"
+        "url": "https://aithinkwise.com/contact"
       },
       "sameAs": [
-        "https://www.aithinkwise.com"
+        "https://aithinkwise.com"
       ]
     },
     "website": {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "AiThinkWise",
-      "url": "https://www.aithinkwise.com",
+      "url": "https://aithinkwise.com",
       "description": "Professional web development and business automation solutions",
       "publisher": {
         "@type": "Organization",
@@ -157,7 +157,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://www.aithinkwise.com/?s={search_term_string}",
+        "target": "https://aithinkwise.com/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },

@@ -344,11 +344,11 @@
         
         // Check if main site is available every 30 seconds
         setInterval(function() {
-            fetch('https://www.aithinkwise.com', { method: 'HEAD' })
+            fetch('https://aithinkwise.com', { method: 'HEAD' })
                 .then(response => {
                     if (response.ok) {
                         // Site is back up, redirect to main site
-                        window.location.href = 'https://www.aithinkwise.com';
+                        window.location.href = 'https://aithinkwise.com';
                     }
                 })
                 .catch(error => {
