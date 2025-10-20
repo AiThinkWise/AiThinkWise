@@ -2548,7 +2548,20 @@ body {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
+/* Attribute-based dark mode (to match site toggle) */
+[data-theme="dark"] .encore-service-detailed-card {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
 .dark .encore-service-detailed-card:hover {
+    background: rgba(15, 23, 42, 0.85);
+    border-color: rgba(14, 165, 233, 0.4);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .encore-service-detailed-card:hover {
     background: rgba(15, 23, 42, 0.85);
     border-color: rgba(14, 165, 233, 0.4);
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -2559,7 +2572,16 @@ body {
     border: 2px solid rgba(14, 165, 233, 0.3);
 }
 
+[data-theme="dark"] .encore-service-detailed-icon {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.15));
+    border: 2px solid rgba(14, 165, 233, 0.3);
+}
+
 .dark .encore-service-detailed-icon::before {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.15));
+}
+
+[data-theme="dark"] .encore-service-detailed-icon::before {
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.15));
 }
 
@@ -2568,11 +2590,24 @@ body {
     box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
 }
 
+[data-theme="dark"] .encore-service-detailed-card:hover .encore-service-detailed-icon {
+    border-color: rgba(14, 165, 233, 0.5);
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
+}
+
 .dark .encore-service-detailed-icon .encore-icon {
     color: var(--encore-primary-400);
 }
 
+[data-theme="dark"] .encore-service-detailed-icon .encore-icon {
+    color: var(--encore-primary-400);
+}
+
 .dark .encore-service-detailed-card:hover .encore-service-detailed-icon .encore-icon {
+    color: var(--encore-primary-300);
+}
+
+[data-theme="dark"] .encore-service-detailed-card:hover .encore-service-detailed-icon .encore-icon {
     color: var(--encore-primary-300);
 }
 
@@ -2581,11 +2616,25 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+[data-theme="dark"] .encore-feature-item {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .dark .encore-feature-item::before {
     background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(59, 130, 246, 0.08));
 }
 
+[data-theme="dark"] .encore-feature-item::before {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(59, 130, 246, 0.08));
+}
+
 .dark .encore-feature-item:hover {
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(14, 165, 233, 0.4);
+}
+
+[data-theme="dark"] .encore-feature-item:hover {
     background: rgba(15, 23, 42, 0.6);
     border-color: rgba(14, 165, 233, 0.4);
 }
@@ -2595,7 +2644,17 @@ body {
     border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
+[data-theme="dark"] .encore-feature-icon {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(16, 185, 129, 0.15));
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
 .dark .encore-feature-item:hover .encore-feature-icon {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+[data-theme="dark"] .encore-feature-item:hover .encore-feature-icon {
     border-color: rgba(34, 197, 94, 0.5);
     box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
@@ -2604,7 +2663,15 @@ body {
     color: var(--encore-success-400);
 }
 
+[data-theme="dark"] .encore-feature-icon .encore-icon {
+    color: var(--encore-success-400);
+}
+
 .dark .encore-feature-item:hover .encore-feature-icon .encore-icon {
+    color: var(--encore-success-300);
+}
+
+[data-theme="dark"] .encore-feature-item:hover .encore-feature-icon .encore-icon {
     color: var(--encore-success-300);
 }
 
@@ -3360,6 +3427,39 @@ body {
 
 .encore-cta-note strong {
   color: var(--encore-text-primary);
+}
+
+/* Dark mode visibility fixes for Marketing Strategy section */
+[data-theme="dark"] .encore-problem-item {
+  background: rgba(239, 68, 68, 0.15); /* deeper red tint for dark bg */
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+[data-theme="dark"] .encore-problem-item:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+
+[data-theme="dark"] .encore-marketing-solution {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(14, 165, 233, 0.12));
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+[data-theme="dark"] .encore-solution-highlight {
+  color: var(--encore-primary-300);
+}
+
+[data-theme="dark"] .encore-benefit-highlight {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+[data-theme="dark"] .encore-benefit-highlight:hover {
+  background: rgba(16, 185, 129, 0.22);
+}
+
+[data-theme="dark"] .encore-cta-note {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.35);
 }
 
 /* Responsive Design */
